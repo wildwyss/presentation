@@ -12,7 +12,9 @@ Note: This will only appear in the speaker notes window.
 ## External 1.2
 
 Content 1.2
-
+```java
+class Hello {}
+```
 
 
 ## External 2
