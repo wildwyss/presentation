@@ -2,6 +2,7 @@
 - Das Iterator Protokoll
 - Der Kolibri Iterator
 - Implementation
+- Vergleich zu anderen Sprachen
 
 
 
@@ -85,3 +86,23 @@ Die `transform` function
 
 
 
+### Vergleich
+Kolibri Iterator vs. Haskell vs. Kotlin vs. Python
+```haskell
+ghci > [3,2..11]
+[3,5,7,9,11]
+```
+```python
+for value in range(3, 11, 2):
+  print(value)   # => 3,5,7,9
+```
+```kotlin
+for (value in 3..11 step 2) {
+    print(value) // => 3,5,7,9,11
+}
+```
+```js
+for (const value of Range(3, 11, 2)) {
+  console.log(value); // => 3,5,7,9,11
+}
+```
