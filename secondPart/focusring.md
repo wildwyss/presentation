@@ -50,6 +50,8 @@ const shiftedFocusRing = focusRing.right();
 
 
 ### Beispiel Anwendung
-![SlotMachine](assets/slot-machine.png)
 
-[Slot Machine](https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/focusring/example/SlotMachine.html)
+[//]: # (![SlotMachine]&#40;assets/slot-machine.png&#41;)
+<iframe style="border: none" width="100%" height="600" data-src="https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/focusring/example/SlotMachine.html" data-preload></iframe>
+
+[//]: # ([Slot Machine]&#40;https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/focusring/example/SlotMachine.html&#41;)
