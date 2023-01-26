@@ -179,4 +179,4 @@ Note:
 
 
 ### Demo
-<iframe width="100%" height="600" data-src="https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/logger/example/loggerExample.html" data-preload></iframe>
+<iframe style="border: none" width="100%" height="600" data-src="https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/logger/example/loggerExample.html" data-preload></iframe>
