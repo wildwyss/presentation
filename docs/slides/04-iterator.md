@@ -1,4 +1,4 @@
-## Iterator
+### Iterator
 - Das Iterator Protokoll
 - Der Kolibri Iterator
 - Implementation
@@ -8,7 +8,7 @@
 
 
 ### Das Iterator Protokoll
-Wie funktioniert ein Iterator in JavaScript?
+__Wie funktioniert ein Iterator in JavaScript?__
 ```js [8-9|3-5|1-12]
 const Iterator = (value, inc, stop) => {
   ...
@@ -24,10 +24,16 @@ const Iterator = (value, inc, stop) => {
 }
 ```
 
+Note:
+- iterator = JS Objects, welches dem JS Iterator und Iterable Protokoll folgt
+- iterator Merkmal: nur einmal ausführbar
+- Iterierbarkeit => Objekt muss Property mit Key Symbol.iterator haben, dann ist es ein Iterator
+- Iterator muss eine Funktion `next` haben, welche `value` und `done` returned
 
 
-### Create & Usage
-```js []
+
+### Erstellen
+```js [1|2|3|5]
 const startValue    = 0;
 const incFunction   = value => value + 1;
 const stopDetection = value => value < 5;
@@ -37,8 +43,10 @@ const it = Iterator(startValue, incFunction, stopDetection);
 
 
 
-### Create & Usage
-```js [1-3|5-12]
+### Verwenden
+```js [3-4|7-14]
+const it = Iterator(startValue, incFunction, stopDetection);
+
 for (const element of it) {
   console.log(element);
 }
@@ -60,6 +68,7 @@ it.retainAll(x => x < 10 || x > 90 )
 - takeWhile
 - retainAll
 - rejectAll
+- copy
 - forEach$
 - reverse$
 - eq$
@@ -69,7 +78,10 @@ it.retainAll(x => x < 10 || x > 90 )
 
 ### Implementierungsdetail
 Die `transform` function
-```js []
+```js [1-2|4|4-15] 
+  const range = Range(10);
+  range.map(x => 2 * x);
+
   const map = mapper => {
     // 1. remember previous transform operation
     const oldTransform = transform;
@@ -87,7 +99,7 @@ Die `transform` function
 
 
 ### Vergleich
-Kolibri Iterator vs. Haskell vs. Kotlin vs. Python
+__Kolibri Iterator vs. Haskell vs. Kotlin vs. Python__
 ```haskell
 ghci > [3,2..11]
 [3,5,7,9,11]

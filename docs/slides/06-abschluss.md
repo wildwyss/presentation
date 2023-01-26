@@ -1,5 +1,5 @@
-## Reflektion & 
-## angewendete Prinzipien
+### Reflektion & 
+### angewendete Prinzipien
 - Extreme Programming
 - Source Code Qualität
 - User Tests
@@ -49,7 +49,7 @@
 
 
 ### Reflection & Zusammenfassung
-#### Werden wir beibehalten ...
+__Das werden wir beibehalten ...__
 - Pair programming
 - Reviews
 - Notion als Organisations-Platform
@@ -57,7 +57,7 @@
 
 
 ### Reflection & Zusammenfassung
-#### Werden wir verbessern ...
+__Das werden wir verbessern ...__
 - Bessere Git Nutzung
 - Zeitpunkt Dokumentation schreiben
 
