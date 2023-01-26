@@ -10,3 +10,4 @@ out/
 log/*.log
 tmp/**
 .sass-cache
+/docs/node_modules/
