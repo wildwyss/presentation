@@ -21,6 +21,21 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   url("fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Rubik-SemiBold";
+  src: local("Rubik-SemiBold"),
+  url("fonts/Rubik/static/Rubik-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: local("Rubik-Medium"),
+  url("fonts/Rubik/static/Rubik-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: local("Rubik-Regular"),
+  url("fonts/Rubik/static/Rubik-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Rubik-Light";
   src: local("Rubik-Light"),
   url("fonts/Rubik/static/Rubik-Light.ttf") format("truetype");
@@ -31,17 +46,15 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   url("fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
 }
 
-:root {
-
-}
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
   --font-serif:       "RobotoSlab-Light",   serif;
   --font-serif-bold:  "RobotoSlab-Regular", serif;
-  --font-sans-serif:  "Rubik-Light", ui-sans-serif, sans-serif;
+  --font-sans-serif:  "Rubik-Regular", ui-sans-serif, sans-serif;
+  --font-sans-serif-light:  "Rubik-Light", ui-sans-serif, sans-serif;
+  --font-sans-serif-bold:  "Rubik-Medium", ui-sans-serif, sans-serif;
   --font-mono:        "JetBrainsMono-VariableFont_wght", monospace;
 
   font-family: var(--font-serif);
@@ -57,13 +70,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 
   --r-background-color: #fff;
-  --r-main-font: Var(--font-serif);
+  --r-main-font: Var(--font-sans-serif);
   --r-main-font-size: 30px;
   --r-main-color: #000;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Var(--font-serif-bold);
-  --r-heading-color: Var(--kolibri-color-output);
+  --r-heading-font: Var(--font-sans-serif-bold);
+  --r-heading-color: #000;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: none;
