@@ -1,4 +1,4 @@
-<img src="assets/kolibri-logo.jpg" width="200"/>
+<img src="assets/kolibri-logo.png" width="200"/>
 
 ## Projekt 5 Informatik
 #### Funktionale Standard Library für das Kolibri Web UI Toolkit
@@ -38,7 +38,7 @@ Note:
 
 
 ### Aufgabenstellung
-<img src="assets/kolibri-logo.jpg" width="200"/>
+<img src="assets/kolibri-logo.png" width="200"/>
 
 - Kolibri erweitern 
 - Hohe Qualität
