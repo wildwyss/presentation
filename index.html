@@ -1,40 +1,52 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>IP5 - Präsentation</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/kolibri.css" id="theme">
+	<link rel="stylesheet" href="plugin/highlight/idea.min.css">
+</head>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+<body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<div class="reveal">
+	<div class="slides">
+		<!--   INTRODUCTION -->
+		<section data-background-image="/slides/assets/background.png" data-auto-animate data-markdown="slides/introduction.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+		<!--   RESULTS OVERVIEW -->
+		<section data-background-image="/slides/assets/background.png" data-auto-animate data-markdown="slides/results.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+		<!--   LOGGER      -->
+		<section data-background-image="/slides/assets/background.png" data-auto-animate data-markdown="slides/logger.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+		<!--   ITERATOR    -->
+		<section data-background-image="/slides/assets/background.png" data-auto-animate data-markdown="slides/iterator.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+		<!--   FOCUSRING   -->
+		<section data-background-image="/slides/assets/background.png" data-auto-animate data-markdown="slides/focusring.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+		<!--    VORGANG    -->
+		<section data-background-image="/slides/assets/background.png" data-auto-animate data-markdown="slides/vorgang.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+	</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/zoom/zoom.js"></script>
+<script src="plugin/notes/notes.js"></script>
+
+<script>
+	Reveal.initialize({
+		center: true,
+		hash: true,
+		slideNumber: true,
+		mouseWheel: true,
+		plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealNotes ],
+	});
+
+</script>
+
+</body>
 </html>

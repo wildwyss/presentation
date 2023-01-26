@@ -26,7 +26,7 @@
 
 
 ### Funktionsweise
-![Focusring](assets/Focusring%20demo.png)
+<img src="slides/assets/focusring-demo.png" width="2114" alt="Focusring Image"/>
 
 
 
@@ -50,6 +50,6 @@ const shiftedFocusRing = focusRing.right();
 
 
 ### Beispiel Anwendung
-![SlotMachine](assets/slot-machine.png)
 
-[Slot Machine](https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/focusring/example/SlotMachine.html)
+<iframe style="border: none" width="100%" height="600" data-src="https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/focusring/example/SlotMachine.html" data-preload></iframe>
+

@@ -34,7 +34,8 @@
 
 
 ### User Tests
-![User-Test](assets/user-test.png)
+<img src="slides/assets/user-test.png" width="550" alt="Usertest Image"/>
+
 
 
 
