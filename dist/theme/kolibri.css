@@ -26,6 +26,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   url("fonts/Rubik/static/Rubik-SemiBold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Rubik-Bold";
+  src: local("Rubik-Bold"),
+  url("fonts/Rubik/static/Rubik-Bold.ttf") format("truetype");
+}
+@font-face {
   font-family: "Rubik-Medium";
   src: local("Rubik-Medium"),
   url("fonts/Rubik/static/Rubik-Medium.ttf") format("truetype");
@@ -193,7 +198,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal strong,
 .reveal b {
-  font-weight: bold;
+  font-family: "Rubik-Bold";
 }
 
 .reveal em {
