@@ -40,9 +40,10 @@ Note:
 ### Aufgabenstellung
 <img src="slides/assets/kolibri-logo.png" width="200"/>
 
-- Kolibri erweitern 
-- Hohe Qualität
-- Dokumentation mittels JSDoc
+- Kolibri erweitern                       <!-- .elements class="fragment" data-fragment-index="1" --> 
+- Hohe Qualität                           <!-- .elements class="fragment" data-fragment-index="2" -->
+- Dokumentation mittels JSDoc             <!-- .elements class="fragment" data-fragment-index="3" -->
+- Funktionale Lösungsansätze              <!-- .elements class="fragment" data-fragment-index="4" -->
 
 Note:
 * Offene Aufgabenstellung
@@ -51,20 +52,29 @@ Note:
   * Fokus Ring in der Aufgabenstellung -> Dazu später mehr
   * Jede Woche schauen wie weit man gekommen ist, und was noch ansteht
 * Qualität & Testing im Fokus
+  * Extreme Programming
+    * Wöchentliche Reviews
+    * Pair Programming
+    * Iteratives Vorgehen
 
 
 
 
-### Projektwahl
-- Funktionale Programmierung                    <!-- .elements class="fragment" data-fragment-index="1" --> 
-- Web-Entwicklung                               <!-- .elements class="fragment" data-fragment-index="1" -->
-- Offene Fragestellung                          <!-- .elements class="fragment" data-fragment-index="2" --> 
-- Qualtität steht im Vordergrund                <!-- .elements class="fragment" data-fragment-index="3" -->
+### RESULTS
+* Logging Framework                <!-- .elements class="fragment" data-fragment-index="1" -->
+* Iterator                         <!-- .elements class="fragment" data-fragment-index="2" -->
+* Focus Ring                       <!-- .elements class="fragment" data-fragment-index="3" -->
 
 Note:
-* fprog besucht und interessieren uns sehr für fp und Webentwicklung (click)
-  * Lambda Kalkül in webpr                                           (click)
-* Offene Fragestellung: Das "ungewisse" und mitprägende              (click)
-  * Schauen wie weit man kommt. Was ist möglich?
-  * der Kreativität freien Lauf lassen
-* Gute Software entwickeln -> anders als zum Teil in der Industrie   (click)
+* Logging Framework -> ähnlich wie Log4J
+  *  
+  * console.log zu wenig
+  * Hohe Anforderungen an gutes Logging
+  * Erweiterbarkeit
+* Iterator
+  * Bekannt aus anderen Programmiersprachen
+  * Setzt JS Iterator Protokoll um
+  * Erweiter um funktionale Konstrukte
+* Fokus ring
+  * Immutable Datenstruktur
+  * In der Aufgabenstellung beschrieben
