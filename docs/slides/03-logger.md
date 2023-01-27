@@ -62,10 +62,10 @@ Environment => gelten für alle Log Statements
 * Appender: wohin wird geloggt?
 * Logging Level: Logstatements mit tieferen Levels verwerfen
   * Logging Level zu Log_ERROR, LOG_DEBUG wird verworfen
-* Kontext: Nur Log Messages von diesesm Kontext aus werden geloggt
+* Kontext: Nur Log Messages von diesem Kontext aus werden geloggt
 
 Logger:
-* auf welchem Loglevel wrid diese Message geloggt?
+* auf welchem Loglevel wird diese Message geloggt?
 * Wie soll die Nachricht formatiert werden
 
 
@@ -172,11 +172,11 @@ debug("Tobias Wyss");
 ```
 
 Note:
-* Mit Partial Application einfach wiederverwenbar.
+* Mit Partial Application einfach wiederverwendbar.
 * Neuer Logger erstellen -> `logger` aufrufen.
 
 
 
 
 ### Demo
-<iframe style="border: none" width="100%" height="600" data-src="https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/logger/example/loggerExample.html" data-preload></iframe>
+<iframe style="border: none; margin-left: 250px" width="100%" height="600" data-src="https://wildwyss.github.io/ip5-overview/contrib/p5_wild_wyss/src/logger/example/loggerExample.html" data-preload></iframe>

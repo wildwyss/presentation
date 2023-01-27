@@ -43,7 +43,7 @@ Features des Logging Framework, von Log4j inspiriert
 Note:
 * Setzt JS Iteration Protokoll um
 * zb Zahlen generieren
-* Erweitert um Funktionale Konstrukte
+* Erweitert um funktionale Konstrukte
 
 
 

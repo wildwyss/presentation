@@ -1,5 +1,5 @@
-### Reflektion & 
-### angewendete Prinzipien
+## Reflektion & 
+## angewendete Prinzipien
 - Extreme Programming
 - Source Code Qualität
 - User Tests

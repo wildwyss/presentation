@@ -1,4 +1,4 @@
-### Iterator
+## Iterator
 - Das Iterator Protokoll
 - Der Kolibri Iterator
 - Implementation
@@ -32,7 +32,7 @@ Note:
 
 
 
-### Erstellen
+### Erstellung
 ```js [1|2|3|5]
 const startValue    = 0;
 const incFunction   = value => value + 1;
@@ -43,7 +43,7 @@ const it = Iterator(startValue, incFunction, stopDetection);
 
 
 
-### Verwenden
+### Verwendung
 ```js [3-4|7-14]
 const it = Iterator(startValue, incFunction, stopDetection);
 

@@ -12,7 +12,7 @@ Note:
 
 
 ### Vorstellung
-<div>
+<div style="display: flex; justify-content: left; align-items: center; margin-left: 100px;">
   <img src="slides/assets/profile-images/andri-wild.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Andri Wild </li>
@@ -20,7 +20,7 @@ Note:
     <li> <a href="mailto:andri.wild@students.fhnw.ch">andri.wild@students.fhnw.ch</a> </li>
   </ul>
 </div>
-<div>
+<div style="display: flex; justify-content: left; align-items: center; margin-left: 100px;">
   <img src="slides/assets/profile-images/tobias-wyss.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Tobias Wyss </li>
@@ -46,7 +46,7 @@ Note:
 
 Note:
 * Offene Aufgabenstellung
-* Erweitungerung um funktionale Lösungen
+* Erweiterung um funktionale Lösungen
   * Welche das sind, war zu Beginn offen
   * Fokus Ring in der Aufgabenstellung -> Dazu später mehr
   * Jede Woche schauen wie weit man gekommen ist, und was noch ansteht
