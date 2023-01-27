@@ -75,7 +75,7 @@ Logger:
 __Environment__: Appender
 * Wohin wird geloggt?
 
-```js [4-5] 
+```js [1-2|4-5] 
 import { addToAppenderList } from "./logger/logger.js";
 import { Appender }          from "./logger/appender/consoleAppender.js";
 
@@ -95,7 +95,7 @@ Note:
 __Environment__: Logging Level
 * Welche Levels werden geloggt?
 
-```js [3-4] 
+```js [1-4| 6-7] 
 import { 
   LOG_DEBUG,
   setLoggingLevel
@@ -118,7 +118,7 @@ Note:
 __Environment__: Kontext 
  * Welche Logger dürfen loggen?
 
-```js [3-4] 
+```js [1|3-4] 
 import { setGlobalContext } from "./logger.js";
 
 const myLogContext = "GLOBAL.CONTEXT"
@@ -135,7 +135,7 @@ Note:
 
 ### Konfiguration
 __Logger__: Die Funktion
-```js [1|2|4|5-7|9-10]
+```js [1|2|12|4|5-7|9-10]
 const logger = loggerLevel => context => formatMsg => msg =>
   LazyIf( messageShouldBeLogged(loggerLevel)(context) )
   (Then(() =>
