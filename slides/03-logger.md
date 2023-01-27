@@ -96,7 +96,10 @@ __Environment__: Logging Level
 * Welche Levels werden geloggt?
 
 ```js [3-4] 
-import { LOG_DEBUG } from "./logger.js";
+import { 
+  LOG_DEBUG,
+  setLoggingLevel
+  } from "./logger/logger.js";
 
 setLoggingLevel(LOG_DEBUG);
 const loggingLevel = getLoggingLevel();
