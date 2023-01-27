@@ -5,7 +5,7 @@
 This project contains the presentation of the IP 5 work on extending the functional standard library for the Kolibri Web UI Toolkit. 
 For more information visit the link below:
 
-[Project Overview](https://github.com/wildwyss/ip5-overview)
+[Project Overview](https://wildwyss.github.io/ip5-overview/)
 
 ## Build With
 - [Reveal.js](https://revealjs.com/)
