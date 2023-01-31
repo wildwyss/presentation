@@ -8,6 +8,7 @@ In den nächsten Minuten erkläre ich das Logging Framework
 ### Kernidee
 * Eine zentrale Funktion                   <!-- .elements class="fragment" data-fragment-index="1" -->
   * Konfigurierbar über Parameter 
+  * Log Statements absetzen
 * Allgemeines Environment                  <!-- .elements class="fragment" data-fragment-index="2" --> 
     * Wo wird hin geloggt? 
     * Einschränken was geloggt wird 
@@ -16,12 +17,13 @@ Note:
 2 Ideen die man verstehen muss:
 * es gibt eine zentrale Logging Funktion
   * Konfigurierbar über Parameter
+  * Log Statements absetzen
 * Environment 
   * Konfiguration die für alle Aufrufe der Logging-Funktion gelten
 
 
 
-### Konzepte
+### Features
 <ul>
 <li> Logging Levels (<code>LOG_DEBUG</code>)</li>   <!-- .elements class="fragment" data-fragment-index="1" -->
 <li> Appender </li>                               <!-- .elements class="fragment" data-fragment-index="2" -->
@@ -29,7 +31,8 @@ Note:
 </ul>
 
 Note:
-Erläuterung der Konzepte
+Erläuterung der Features
+* Features aus anderen Logging Frameworks bekannt
 * Loglevel
   * Jede Message wird auf Log level geloggt 
   * Loglevel Einschränkung
@@ -46,13 +49,13 @@ Erläuterung der Konzepte
 ### Konfiguration
 __Environment__                           <!-- .elements class="fragment" data-fragment-index="1" -->
 * Zur Laufzeit konfigurierbar             <!-- .elements class="fragment" data-fragment-index="3" -->
-* Aktive Appender                         <!-- .elements class="fragment" data-fragment-index="3" -->
-* Aktiver Logging Level                   <!-- .elements class="fragment" data-fragment-index="4" -->
-* Aktiver Kontext                         <!-- .elements class="fragment" data-fragment-index="5" -->
+* Aktive Appender                         <!-- .elements class="fragment" data-fragment-index="4" -->
+* Aktiver Logging Level                   <!-- .elements class="fragment" data-fragment-index="5" -->
+* Aktiver Kontext                         <!-- .elements class="fragment" data-fragment-index="6" -->
 
 __Logger__                                <!-- .elements class="fragment" data-fragment-index="1" -->
-* Loggt auf Loglevel                      <!-- .elements class="fragment" data-fragment-index="6" -->
-* Formatiert Log Messages                 <!-- .elements class="fragment" data-fragment-index="7" -->
+* Loggt auf Loglevel                      <!-- .elements class="fragment" data-fragment-index="7" -->
+* Formatiert Log Messages                 <!-- .elements class="fragment" data-fragment-index="8" -->
 
 Note:
 Zwei Orte um zu konfigurieren, Logger & Environment
@@ -63,6 +66,7 @@ Environment => gelten für alle Log Statements
 * Logging Level: Logstatements mit tieferen Levels verwerfen
   * Logging Level zu Log_ERROR, LOG_DEBUG wird verworfen
 * Kontext: Nur Log Messages von diesem Kontext aus werden geloggt
+  * bsp: Grosse App aus mehreren Modulen
 
 Logger:
 * auf welchem Loglevel wird diese Message geloggt?
@@ -95,14 +99,13 @@ Note:
 __Environment__: Logging Level
 * Welche Levels werden geloggt?
 
-```js [1-4| 6-7] 
+```js [1-4| 6] 
 import { 
   LOG_DEBUG,
   setLoggingLevel
   } from "./logger/logger.js";
 
 setLoggingLevel(LOG_DEBUG);
-const loggingLevel = getLoggingLevel();
 ```
 
 Note:
@@ -119,7 +122,7 @@ __Environment__: Kontext
  * Welche Logger dürfen loggen?
 
 ```js [1|3-4] 
-import { setGlobalContext } from "./logger.js";
+import { setGlobalContext } from "./logger/logger.js";
 
 const myLogContext = "GLOBAL.CONTEXT"
 setGlobalContext(myLogContext);
@@ -161,7 +164,7 @@ Hier sehen Sie die Logger Funktion
 
 
 
-### Konfiguration
+### Verwendung
 Wiederverwendbarkeit durch Partial Application!
 ```js [3|4|5|7-8]
 const logger = loggerLevel => context => formatMsg => msg => ... ;
