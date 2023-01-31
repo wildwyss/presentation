@@ -145,7 +145,7 @@ const logger = loggerLevel => context => formatMsg => msg =>
     appenderList.map(appender => {
         const levelName = loggerLevel(snd);
         const levelCallback = appender[levelName.toLowerCase()];
-        return levelCallback(formatMsg(context)(levelName)(evaluateMessage(msg)))
+        return levelCallback(formatMsg(context)(levelName)(evalMessage(msg)))
       })
       // return True if log message has been appended to every appender
       .reduce((acc, cur) => and(acc)(cur), True)) 
