@@ -26,7 +26,7 @@
 
 
 ### Funktionsweise
-<img src="slides/assets/focusring-demo.png" width="2114" alt="Focusring Image"/>
+<img src="assets/focusring-demo.png" width="2114" alt="Focusring Image"/>
 
 
 

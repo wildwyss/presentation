@@ -1,4 +1,4 @@
-<img src="slides/assets/kolibri-logo.png" width="200"/>
+<img src="assets/kolibri-logo.png" width="200"/>
 
 ## Projekt 5 Informatik
 #### Funktionale Standard Library für das Kolibri Web UI Toolkit
@@ -13,7 +13,7 @@ Note:
 
 ### Vorstellung
 <div style="display: flex; justify-content: left; align-items: center; margin-left: 100px;">
-  <img src="slides/assets/profile-images/andri-wild.jpg" alt="drawing" width="200"/>
+  <img src="assets/profile-images/andri-wild.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Andri Wild </li>
     <li> Informatik Vertiefung Web </li>
@@ -21,7 +21,7 @@ Note:
   </ul>
 </div>
 <div style="display: flex; justify-content: left; align-items: center; margin-left: 100px;">
-  <img src="slides/assets/profile-images/tobias-wyss.jpg" alt="drawing" width="200"/>
+  <img src="assets/profile-images/tobias-wyss.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Tobias Wyss </li>
     <li> Informatik iCompetence </li>
@@ -38,7 +38,7 @@ Note:
 
 
 ### Aufgabenstellung
-<img src="slides/assets/kolibri-logo.png" width="200"/>
+<img src="assets/kolibri-logo.png" width="200"/>
 
 - Kolibri erweitern                       <!-- .elements class="fragment" data-fragment-index="1" --> 
 - Funktionale Lösungsansätze              <!-- .elements class="fragment" data-fragment-index="2" -->
