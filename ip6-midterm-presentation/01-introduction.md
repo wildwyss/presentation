@@ -1,8 +1,8 @@
 <img src="assets/kolibri-logo.png" width="200"/>
 
-## Projekt 5 Informatik
+## IP6 - Bachelor Thesis
 #### Funktionale Standard Library für das Kolibri Web UI Toolkit
-#### HS22
+#### FS 23 
 
 Note:
 * Begrüssung
@@ -34,6 +34,14 @@ Note:
 * beide 5. Semester
 * Beide sehr an Programmierung & Web interessiert
 
+
+
+### Inhalt
+- Ausgangslage
+- Resultate und Erkentnisse aus IP5
+- Stand IP6
+- Ausblick
+- Code walkthrough
 
 
 
