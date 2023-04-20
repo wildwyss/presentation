@@ -1,6 +1,6 @@
 <img src="assets/kolibri-logo.png" width="200"/>
 
-## IP6 - Bachelor Thesis
+## IP6 Informatik - Bachelor Thesis
 #### Funktionale Standard Library für das Kolibri Web UI Toolkit
 #### FS 23 
 
@@ -38,7 +38,7 @@ Note:
 
 ### Inhalt
 - Ausgangslage
-- Resultate und Erkentnisse aus IP5
+- Resultate und Resultate aus IP5
 - Stand IP6
 - Ausblick
 - Code walkthrough
