@@ -1,8 +1,8 @@
 <img src="assets/kolibri-logo.png" width="200"/>
 
-## Projekt 5 Informatik
-#### Funktionale Standard Library für das Kolibri Web UI Toolkit
-#### HS22
+### IP6 Informatik - Bachelor Thesis
+#### Erweiterung Funktionale Standard Library für das Kolibri Web UI Toolkit
+#### FS23 
 
 Note:
 * Begrüssung
@@ -62,7 +62,7 @@ Note:
 - Sequence Library                              <!-- .elements class="fragment" data-fragment-index="1" -->
   - Komponenten und Konzepte                    <!-- .elements class="fragment" data-fragment-index="1" -->
 - Weitere Abstraktionen                         <!-- .elements class="fragment" data-fragment-index="2" -->
-      - Verarbeiten von Daten in einem Kontext  <!-- .elements class="fragment" data-fragment-index="2" -->
+  - Verarbeiten von Daten in einem Kontext      <!-- .elements class="fragment" data-fragment-index="2" -->
 - Ein Blick in die IDE                          <!-- .elements class="fragment" data-fragment-index="3" -->
   - Library Aufbau                              <!-- .elements class="fragment" data-fragment-index="3" -->
   - Live Coding                                 <!-- .elements class="fragment" data-fragment-index="3" -->
