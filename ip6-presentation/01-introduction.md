@@ -53,6 +53,8 @@ Note:
 ### Resultate
 * Sequence Library      <!-- .elements class="fragment" data-fragment-index="1" -->
 * Abstraktionen zur vereinfachten Verarbeitung von Daten <!-- .elements class="fragment" data-fragment-index="2" -->
+ 
+__Getestet und in hoher Qualität!__<!-- .elements class="fragment" data-fragment-index="3" -->
 
 Note:
 
@@ -68,5 +70,5 @@ Note:
   - Live Coding                                 <!-- .elements class="fragment" data-fragment-index="3" -->
 - Resultate                                     <!-- .elements class="fragment" data-fragment-index="4" -->
   - Testing                                     <!-- .elements class="fragment" data-fragment-index="4" -->
-- Examples                                      <!-- .elements class="fragment" data-fragment-index="5" -->
-  - Fazit                                       <!-- .elements class="fragment" data-fragment-index="5" -->
+  - Examples                                    <!-- .elements class="fragment" data-fragment-index="4" -->
+  - Fazit                                       <!-- .elements class="fragment" data-fragment-index="4" -->

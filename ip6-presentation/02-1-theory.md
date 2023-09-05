@@ -8,6 +8,9 @@ True, True, False, True, True, False<!-- .elements class="fragment" data-fragmen
 
 a, ab, abc, abcd, abcde, ...<!-- .elements class="fragment" data-fragment-index="2" -->
 
+Note:
+- Was ist eine Sequence? In anderen Sprachen würde man vllt von Liste sprechen, aber lazy liste
+
 
 
 ### Basis der Sequence - Die Iteration Protocols
