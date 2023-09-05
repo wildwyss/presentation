@@ -132,7 +132,7 @@ const map = mapper => iterable => {
 
 
 ### Vorteile des Decorator Approach 
-```js
+```js[]
 const sequence = Sequence(0, x => x < 10, x => x + 1);
 const mapped   = map(x => x * 2)(sequence);
 ```
