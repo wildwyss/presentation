@@ -61,3 +61,7 @@ const result =
     .where(x => x % 2 == 0)
     .result()
 ```
+
+Note:
+- Range ist eine Sequence, basierend auf Zahlen
+- Range und Maybe implementieren das monadische Interface

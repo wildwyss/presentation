@@ -2,10 +2,13 @@
 ## Funktionale Standard Library für das Kolibri Web Ui Toolkit
 
 ## About The Project 
-This project contains the presentation of the IP 5 work on extending the functional standard library for the Kolibri Web UI Toolkit. 
+This project contains the presentations of the IP5 and IP6 work on extending
+the functional standard library for the Kolibri Web UI Toolkit. 
+
 For more information visit the link below:
 
-[Project Overview](https://wildwyss.github.io/ip5-overview/)
+[Project Overview IP5](https://wildwyss.github.io/ip5-overview/)
+[Project Overview IP6](https://wildwyss.github.io/ip6-overview/)
 
 ## Build With
 - [Reveal.js](https://revealjs.com/)
