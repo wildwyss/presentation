@@ -110,7 +110,7 @@ Lösung: Decorator Pattern<!-- .elements class="fragment" data-fragment-index="2
 
 
 ### Decorator Pattern 
-<img src="assets/decorator.png" width="800"/>
+<img src="ip6-presentation/assets/decorator.png" width="800"/>
 
 Note:
 - Beispiel map: jeder Wert wird auf einen anderen abgebildet
