@@ -1,12 +1,12 @@
 ### Sequence Library
 #### Was ist eine Sequence?
-_Eine Folge von endlichen oder unendlichen Daten._<!-- .elements class="fragment" data-fragment-index="1" -->
+_Eine endliche oder unendliche Folge von Werten ._<!-- .elements class="fragment" data-fragment-index="1" -->
 
-1, 3, 5, 7, 9, ...<!-- .elements class="fragment" data-fragment-index="2" -->
+`1, 3, 5, 7, 9, ...`<!-- .elements class="fragment" data-fragment-index="2" -->
 
-True, True, False, True, True, False<!-- .elements class="fragment" data-fragment-index="2" -->
+`True, True, False, True, True, False`<!-- .elements class="fragment" data-fragment-index="2" -->
 
-a, ab, abc, abcd, abcde, ...<!-- .elements class="fragment" data-fragment-index="2" -->
+`a, ab, abc, abcd, abcde, ...`<!-- .elements class="fragment" data-fragment-index="2" -->
 
 Note:
 - Was ist eine Sequence? In anderen Sprachen würde man vllt von Liste sprechen, aber lazy liste
@@ -57,7 +57,7 @@ Note:
 
 
 ### Implementierung der Iteration Protocols 
-```js[|]
+```js[9-13]
 const InfiniteOnesIterable = () => {
   const next = () => ({ done: false, value: 1 });
 
@@ -65,9 +65,7 @@ const InfiniteOnesIterable = () => {
     [Symbol.iterator]: () => ({ next })
   }
 };
-```
 
-```js[]
 const [one, anotherOne, andOneAgain] = InfiniteOnesIterable();
 
 for (const _one of InfiniteOnesIterable()) { 
@@ -156,7 +154,7 @@ const map = mapper => iterable => {
 
 
 
-### Vorteile des Decorator Approach 
+### Vorteile der Umsetzung 
 ```js[]
 const sequence = Sequence(0, x => x < 10, x => x + 1);
 const mapped   = map(x => x * 2)(sequence);

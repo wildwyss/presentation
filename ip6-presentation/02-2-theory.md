@@ -15,7 +15,7 @@ Note:
 
 
 
-### Beispiel - Monadisches Interface
+### Monadisches Interface
 Definierte Funktionen:
 - fmap
 - empty
@@ -23,6 +23,7 @@ Definierte Funktionen:
 - pure
 
 Note:
+- Haben uns für dies entschieden, weil Haskell aufzeigt, dass dies sehr generelle programmierung zulässt
 - Beispiel für ein solches Interface - monadisches Interface wie in Haskell implementiert
 - ermöglicht das Verarbeiten von Daten in einem Kontext
 
@@ -42,26 +43,5 @@ Note:
 
 
 
-### JINQ verwenden
-Kann mit allen monadischen Typen umgehen:
-```js[]
-const range  = Range(7);
 
-const result =
-  from(range)
-    .where(x => x % 2 === 0)
-    .result();
-```
-
-```js[]
-const maybe = Just(3);
-
-const result =
-  from(maybe)
-    .where(x => x % 2 == 0)
-    .result()
-```
-
-Note:
-- Range ist eine Sequence, basierend auf Zahlen
-- Range und Maybe implementieren das monadische Interface
+## `Live Demo`

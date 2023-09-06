@@ -2,23 +2,6 @@
 
 
 
-### Resultate - Sequence Library
-<ul>
-<li>Neue Datenstruktur <code>Sequence</code></li>   <!-- .elements class="fragment" data-fragment-index="1" -->
-<li>JS Sprachfeature-Unterstützung </li>   <!-- .elements class="fragment" data-fragment-index="2" -->
-<li>Vielfältige Operatoren (<code>map</code>, <code>foldl</code>, usw.) </li>                               <!-- .elements class="fragment" data-fragment-index="3" -->
-<li> Verwendung analog zu Haskell  </li>                                <!-- .elements class="fragment" data-fragment-index="4" -->
-</ul>
-
-Note:
-- neue Struktur Sequence 
-    - basierend auf Iteration protocols & lazy 
-- Dazu eine library um Sequenzen zu prozessieren
-    - funktioniert mit allen Datenstrukturen die iterierbar sind!
-- Verwendung & Grundgedanke analog zu Haskell (mit einigen syntaktischen Sugars wie pipe)
-
-
-
 #### Tic Tac Toe
 <iframe style="border: none; margin-left: 250px;" width="100%" height="600" data-src="https://wildwyss.github.io/ip6-overview/wild_wyss/src/sequence/examples/tictactoe/TicTacToe.html" data-preload></iframe>
 
@@ -52,20 +35,8 @@ Note:
 
 
 
-### Monadisches Interface
-- Monads mittels JSDoc ausgedrückt <!-- .elements class="fragment" data-fragment-index="1" -->
-- Verschiedene Implementationen <!-- .elements class="fragment" data-fragment-index="2" -->
-- Fehlende Sprachfeatures umgangen <!-- .elements class="fragment" data-fragment-index="3" -->
-
-Note:
-- Monad, Idee aus statisch typisiertem Haskell übernommen
-- Typen: Sequence, Maybe, JSONMonad
-- Fehledne Sprachfeatures: Higher-Kinded types, name overloading, type safety.
-
-
-
-### Fehlende Sprachfeatures umgehen
-
+### Limitationen durch JavaScript
+Unter anderem:
 ```js[1-3|5-6]
 // fehlendes Name-Overloading
 const maybe  = Just(5);
@@ -76,6 +47,7 @@ const maybe2 = /** @type MaybeType */ from(maybe).result();
 ```
 
 Note:
+- Fehlende Sprachfeatures: Higher-Kinded types, name overloading, type safety.
 - Name-Overloading gibt es nicht, da JavaScript nicht typisiert ist!
     - Lösung: Funktionen sind über .-Notation verfügbar
 - JINQ (oder andere Funktionen) verlieren Info, dass es ein Maybe war 
