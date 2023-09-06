@@ -38,25 +38,16 @@ Note:
 
 [//]: # (<img src="assets/kolibri-logo.png" width="200"/>)
 
+- Nachfolgeprojekt des Informatik Projekt 5                       <!-- .elements class="fragment" data-fragment-index="1" -->
 - Funktionale Standard Library erweitern                       <!-- .elements class="fragment" data-fragment-index="1" --> 
-- Hohe Qualität                           <!-- .elements class="fragment" data-fragment-index="3" -->
-- Dokumentation mittels JSDoc             <!-- .elements class="fragment" data-fragment-index="4" -->
+- Hoher Anspruch an die Qualität                           <!-- .elements class="fragment" data-fragment-index="2" -->
+- Dokumentation mittels JSDoc             <!-- .elements class="fragment" data-fragment-index="3" -->
 
 Note:
 * Nachfolge Projekt von IP5
 * Funktionale Lösungen inspiriert von Haskell
 * Qualität & Testing im Fokus, da andere es brauchen sollen
 * JSDoc für einfache Handhabung
-
-
-
-### Resultate
-* Sequence Library      <!-- .elements class="fragment" data-fragment-index="1" -->
-* Abstraktionen zur vereinfachten Verarbeitung von Daten <!-- .elements class="fragment" data-fragment-index="2" -->
- 
-__Getestet und in hoher Qualität!__<!-- .elements class="fragment" data-fragment-index="3" -->
-
-Note:
 
 
 

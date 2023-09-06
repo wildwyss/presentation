@@ -10,6 +10,8 @@ a, ab, abc, abcd, abcde, ...<!-- .elements class="fragment" data-fragment-index=
 
 Note:
 - Was ist eine Sequence? In anderen Sprachen würde man vllt von Liste sprechen, aber lazy liste
+- Die Sequence ist aber lazy, was bedeutet das? Die Sequence hat ein Startwert, jeder weiterer wird basierend auf dem vorhergehenden berechnet
+- Der Speicherplatz ist also minimal, egal ob die Sequence 1 oder und unendlich viele Elemente erzeugt.
 
 
 
@@ -24,6 +26,14 @@ iterator.next(); // returns { done: true,  value: undefined }
 iterator.next(); // returns { done: true,  value: undefined }
 ```
 
+Note:
+- Wie wird eine lazy Sequence erstellt? Dafür müssen wir die Iteration Protokolle von JS betrachten
+- Dafür betrachten wir ein ganz einfaches Beispiel eines gewöhnlichen JavaScript Array, welches ebenfalls ein Objekt ist, das die Iteration Protokolle implementert
+- Auf einem Object, welches die Iteration Protokolle befolgt, ist es möglich, eine Funktion mit dem Namen [Symbol.iterator] zu erhalten.
+- Dies returniert nun ein Objekt, welches die Funktion next() bereitstellt.
+- Über diese Funktion erhält man nun Wert für Wert, bei jedem Aufruf den nächsten, bis das Iterable. also ein iterierbares Objekt aufgebraucht ist
+- ein Iterable kann nur einmal durchloffen werden, anschliessen ist done auf true.
+
 
 
 ### Implementierung der Iteration Protocols 
@@ -36,6 +46,13 @@ const InfiniteOnesIterable = () => {
   }
 };
 ```
+
+Note:
+- Ein kurzer Blick auf die Implementierung der Iteration Protokolle
+- In diesem Beispiel definieren wir ein Iterable, welches eine unendliche Folge von Einsen generiert
+- Dabei sehen wir auf Linie 4-6, dass eine Funktion mit dem Namen Symbol.iterator definiert ist - Symbol.iterator ist ein keyword definiert von der Sprach JS
+- die Funktion liefert ein Objekt zurück, welches eine Funktion mit dem Namen next hat.
+- Die Funktion next, definiert auf Linie 2, returniert nun eine Objekt, welches aus done und value besteht
 
 
 
@@ -61,7 +78,7 @@ for (const _one of InfiniteOnesIterable()) {
 
 
 ### Implementierung der Sequence 
-```js[1 | 3-13 | 1-16]
+```js[1 | 3-13 | 1-19]
 const Sequence = (start, whileFunction, incrementFunction) => {
 
   const iterator = () => {
@@ -77,7 +94,9 @@ const Sequence = (start, whileFunction, incrementFunction) => {
     return { next };
   };
 
-  return  /* omitted */;
+  return {
+    [Symbol.iterator]: iterator
+  } 
 };
 ```
 
@@ -113,8 +132,9 @@ Lösung: Decorator Pattern<!-- .elements class="fragment" data-fragment-index="2
 
 
 ### Implementierung von _map_
-```js
+```js[1 | 3-14 | 16-18]
 const map = mapper => iterable => {
+  
   const mapIterator = () => {
     const inner = iteratorOf(iterable);
     let mappedValue;
@@ -128,7 +148,9 @@ const map = mapper => iterable => {
     return { next };
   };
 
-  return createMonadicSequence(mapIterator); 
+  return {
+    [Symbol.iterator]: mapIterator
+  } 
 };
 ```
 
