@@ -1,4 +1,4 @@
-# Projekt 5 Informatik Presentation
+# Projekt 5 & 6 Informatik Presentation
 ## Funktionale Standard Library für das Kolibri Web Ui Toolkit
 
 ## About The Project 
