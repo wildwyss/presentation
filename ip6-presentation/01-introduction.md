@@ -58,6 +58,3 @@ Note:
   - Library Aufbau                              <!-- .elements class="fragment" data-fragment-index="3" -->
   - Live Coding                                 <!-- .elements class="fragment" data-fragment-index="3" -->
 - Resultate                                     <!-- .elements class="fragment" data-fragment-index="4" -->
-  - Testing                                     <!-- .elements class="fragment" data-fragment-index="4" -->
-  - Examples                                    <!-- .elements class="fragment" data-fragment-index="4" -->
-  - Fazit                                       <!-- .elements class="fragment" data-fragment-index="4" -->

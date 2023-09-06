@@ -17,30 +17,23 @@ Note:
 
 ### Monadisches Interface
 Definierte Funktionen:
-- fmap
-- empty
-- and
-- pure
+- `fmap` 
+- `empty`
+- `pure`
+- `and` (in Haskell: `bind`)
 
 Note:
+- orientiert an haskell monadischem interface
 - Haben uns für dies entschieden, weil Haskell aufzeigt, dass dies sehr generelle programmierung zulässt
-- Beispiel für ein solches Interface - monadisches Interface wie in Haskell implementiert
-- ermöglicht das Verarbeiten von Daten in einem Kontext
 
 
 
 ### JINQ - LINQ für JavaScript
 Verarbeitet monadische Strukturen mittels:
-- from
-- where
-- select
-- pairWith
-- inside
-- map
+ Beispiel
 
 Note:
 - Stellt Funktionen zur Verfügung, die rein auf den monadischen Funktionen arbeiten
-
 
 
 

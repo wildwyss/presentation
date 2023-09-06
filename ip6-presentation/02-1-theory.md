@@ -37,27 +37,7 @@ Note:
 
 
 ### Implementierung der Iteration Protocols 
-```js[1, 7| 4-6 | 2]
-const InfiniteOnesIterable = () => {
-  const next = () => ({ done: false, value: 1 });
-
-  return {
-    [Symbol.iterator]: () => ({ next })
-  }
-};
-```
-
-Note:
-- Ein kurzer Blick auf die Implementierung der Iteration Protokolle
-- In diesem Beispiel definieren wir ein Iterable, welches eine unendliche Folge von Einsen generiert
-- Dabei sehen wir auf Linie 4-6, dass eine Funktion mit dem Namen Symbol.iterator definiert ist - Symbol.iterator ist ein keyword definiert von der Sprach JS
-- die Funktion liefert ein Objekt zurück, welches eine Funktion mit dem Namen next hat.
-- Die Funktion next, definiert auf Linie 2, returniert nun eine Objekt, welches aus done und value besteht
-
-
-
-### Implementierung der Iteration Protocols 
-```js[9-13]
+```js[1-7|9-13]
 const InfiniteOnesIterable = () => {
   const next = () => ({ done: false, value: 1 });
 
@@ -73,19 +53,24 @@ for (const _one of InfiniteOnesIterable()) {
 }
 ```
 
+Note:
+- Ein kurzer Blick auf die Implementierung der Iteration Protokolle
+- In diesem Beispiel definieren wir ein Iterable, welches eine unendliche Folge von Einsen generiert
+- Dabei sehen wir auf Linie 4-6, dass eine Funktion mit dem Namen Symbol.iterator definiert ist - Symbol.iterator ist ein keyword definiert von der Sprach JS
+- die Funktion liefert ein Objekt zurück, welches eine Funktion mit dem Namen next hat.
+- Die Funktion next, definiert auf Linie 2, returniert nun eine Objekt, welches aus done und value besteht
+
+
 
 
 ### Implementierung der Sequence 
-```js[1 | 3-13 | 1-19]
+```js[1 | 3-11 | 1-16]
 const Sequence = (start, whileFunction, incrementFunction) => {
 
   const iterator = () => {
-    let value = start;
-
+    ...
     const next = () => {
-      const current = value;
-      const done = !whileFunction(current);
-      if (!done) value = incrementFunction(value);
+      ...
       return { done, value: current };
     };
     
@@ -127,10 +112,13 @@ Lösung: Decorator Pattern<!-- .elements class="fragment" data-fragment-index="2
 ### Decorator Pattern 
 <img src="assets/decorator.png" width="800"/>
 
+Note:
+- Beispiel map: jeder Wert wird auf einen anderen abgebildet
+
 
 
 ### Implementierung von _map_
-```js[1 | 3-14 | 16-18]
+```js[1 | 3,17 | 8 | 8,9 | 1-19]
 const map = mapper => iterable => {
   
   const mapIterator = () => {
@@ -156,8 +144,8 @@ const map = mapper => iterable => {
 
 ### Vorteile der Umsetzung 
 ```js[]
-const sequence = Sequence(0, x => x < 10, x => x + 1);
-const mapped   = map(x => x * 2)(sequence);
+const values = [0,1,2,3]
+const mapped = map(x => x * 2)(values);
 ```
 
 - Receiver ist letztes Argument
