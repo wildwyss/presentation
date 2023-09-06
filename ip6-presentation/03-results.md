@@ -15,23 +15,24 @@ Note:
     - Algo funktioniert für verschiedene rundenbasierte Spiele
     - Funktioniert nur mit lazy evaluation, da trees riesig werden 
 - Backbonde des Algos sind Sequenzen
+- Schlusswort: Sequence library bringt funktionale Konzepte zu JavaScript
 
 
 
 ### Testing
-- Strukturiert testen durch Testing Table <!-- .elements class="fragment" data-fragment-index="1" -->
+- Strukturiert testen <!-- .elements class="fragment" data-fragment-index="1" -->
 - Testing basierend auf Properties <!-- .elements class="fragment" data-fragment-index="2" -->
 ```js
-    // Struktur bleibt erhalten
-    seq => map(x => x)(seq) ["=="] (seq);
+// Struktur bleibt erhalten
+seq => map(x => x)(seq) ["=="] (seq);
 ```
 
 Note:
-- Viele Operationen müssen Gleiches erfüllen
-    - zb dürfen keine Operationen die darunterliegende Sequenz verändern
-    - Testing table entworfen: testet für jede Operation automatisiert verschiedene Dinge
+- Viele Operationen müssen gleiche Grundfunktionalitäten erfüllen
+- neue Operation: nur Testkonfig schreiben!
 - Property based testing: 
     - für jede Operation können zusätzliche Properties/Invarianten angegeben werden
+- Schlusswort: strukturiertes Testing macht den Kern stärker, wenn die SW wächst
 
 
 
@@ -42,8 +43,8 @@ Unter anderem:
 const maybe  = Just(5);
 const mapped = maybe.fmap(x => 2*x);
 
-// fehlende Higher-kinded Types
-const maybe2 = /** @type MaybeType */ from(maybe).result();
+// fehlende higher-kinded Types
+const monad = from(maybe).result();
 ```
 
 Note:
