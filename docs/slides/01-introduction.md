@@ -1,8 +1,8 @@
 <img src="slides/assets/kolibri-logo.png" width="200"/>
 
-## Projekt 5 Informatik
-#### Funktionale Standard Library für das Kolibri Web UI Toolkit
-#### HS22
+### IP6 Informatik - Bachelor Thesis
+#### Erweiterung Funktionale Standard Library für das Kolibri Web UI Toolkit
+#### FS23 
 
 Note:
 * Begrüssung
@@ -16,7 +16,6 @@ Note:
   <img src="slides/assets/profile-images/andri-wild.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Andri Wild </li>
-    <li> Informatik Vertiefung Web </li>
     <li> <a href="mailto:andri.wild@students.fhnw.ch">andri.wild@students.fhnw.ch</a> </li>
   </ul>
 </div>
@@ -24,57 +23,38 @@ Note:
   <img src="slides/assets/profile-images/tobias-wyss.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Tobias Wyss </li>
-    <li> Informatik iCompetence </li>
     <li> <a href="mailto:tobias.wyss@students.fhnw.ch">tobias.wyss@students.fhnw.ch</a> </li>
   </ul>
 </div>
 
 Note:
-* Andri: Vertiefung Web, ich iCom
-* beide 5. Semester
-* Beide sehr an Programmierung & Web interessiert
 
 
 
 
 ### Aufgabenstellung
-<img src="slides/assets/kolibri-logo.png" width="200"/>
 
-- Kolibri erweitern                       <!-- .elements class="fragment" data-fragment-index="1" --> 
-- Funktionale Lösungsansätze              <!-- .elements class="fragment" data-fragment-index="2" -->
-- Hohe Qualität                           <!-- .elements class="fragment" data-fragment-index="3" -->
-- Dokumentation mittels JSDoc             <!-- .elements class="fragment" data-fragment-index="4" -->
+[//]: # (<img src="assets/kolibri-logo.png" width="200"/>)
+
+- Nachfolgeprojekt des Informatik Projekt 5                       <!-- .elements class="fragment" data-fragment-index="1" -->
+- Funktionale Standard Library erweitern                       <!-- .elements class="fragment" data-fragment-index="1" --> 
+- Hoher Anspruch an die Qualität                           <!-- .elements class="fragment" data-fragment-index="2" -->
+- Dokumentation mittels JSDoc             <!-- .elements class="fragment" data-fragment-index="3" -->
 
 Note:
-* Erweiterung 
-  * Welche das sind, war zu Beginn offen
-  * Funktionale Lösungen
-  * Fokus Ring in der Aufgabenstellung -> Dazu später mehr
+* Nachfolge Projekt von IP5
+* Funktionale Lösungen inspiriert von Haskell
 * Qualität & Testing im Fokus, da andere es brauchen sollen
-  * Extreme Programming
-    * Wöchentliche Reviews
-    * Pair Programming
-    * Iteratives Vorgehen
 * JSDoc für einfache Handhabung
 
 
 
-### Resultate
-* Logging Framework                <!-- .elements class="fragment" data-fragment-index="1" -->
-* Iterator                         <!-- .elements class="fragment" data-fragment-index="2" -->
-* Focus Ring                       <!-- .elements class="fragment" data-fragment-index="3" -->
-
-Note:
-* Kurze Übersicht was erreicht wurde 
-* Logging Framework -> ähnlich wie Log4J
-  * console.log zu wenig
-  * Hohe Anforderungen an gutes Logging
-  * Erweiterbarkeit
-* Iterator
-  * Bekannt aus anderen Programmiersprachen
-  * Setzt JS Iterator Protokoll um
-  * Erweiter um funktionale Konstrukte
-* Fokus ring
-  * Immutable Datenstruktur
-  * Elemente sind in einem Ring angeordnet
-  * Simon Peyton Jones
+### Inhalt
+- Sequence Library                              <!-- .elements class="fragment" data-fragment-index="1" -->
+  - Komponenten und Konzepte                    <!-- .elements class="fragment" data-fragment-index="1" -->
+- Weitere Abstraktionen                         <!-- .elements class="fragment" data-fragment-index="2" -->
+  - Verarbeiten von Daten in einem Kontext      <!-- .elements class="fragment" data-fragment-index="2" -->
+- Ein Blick in die IDE                          <!-- .elements class="fragment" data-fragment-index="3" -->
+  - Library Aufbau                              <!-- .elements class="fragment" data-fragment-index="3" -->
+  - Live Coding                                 <!-- .elements class="fragment" data-fragment-index="3" -->
+- Resultate                                     <!-- .elements class="fragment" data-fragment-index="4" -->
