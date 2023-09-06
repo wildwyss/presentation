@@ -1,4 +1,4 @@
-<img src="assets/kolibri-logo.png" width="200"/>
+<img src="ip6-presentation/assets/kolibri-logo.png" width="200"/>
 
 ### IP6 Informatik - Bachelor Thesis
 #### Erweiterung Funktionale Standard Library für das Kolibri Web UI Toolkit
@@ -13,14 +13,14 @@ Note:
 
 ### Vorstellung
 <div style="display: flex; justify-content: left; align-items: center; margin-left: 100px;">
-  <img src="assets/profile-images/andri-wild.jpg" alt="drawing" width="200"/>
+  <img src="ip6-presentation/assets/profile-images/andri-wild.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Andri Wild </li>
     <li> <a href="mailto:andri.wild@students.fhnw.ch">andri.wild@students.fhnw.ch</a> </li>
   </ul>
 </div>
 <div style="display: flex; justify-content: left; align-items: center; margin-left: 100px;">
-  <img src="assets/profile-images/tobias-wyss.jpg" alt="drawing" width="200"/>
+  <img src="ip6-presentation/assets/profile-images/tobias-wyss.jpg" alt="drawing" width="200"/>
   <ul>
     <li> Tobias Wyss </li>
     <li> <a href="mailto:tobias.wyss@students.fhnw.ch">tobias.wyss@students.fhnw.ch</a> </li>

@@ -128,7 +128,7 @@ const map = mapper => iterable => {
     const next = () => {
       const { done, value } = inner.next();
       if (!done) mappedValue = mapper(value);
-      return { done, value: mappedValue }
+      return { done, value: mappedValue };
     };
     
     return { next };
@@ -144,7 +144,7 @@ const map = mapper => iterable => {
 
 ### Vorteile der Umsetzung 
 ```js[]
-const values = [0,1,2,3]
+const values = [0,1,2,3];
 const mapped = map(x => x * 2)(values);
 ```
 
