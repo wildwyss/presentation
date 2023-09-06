@@ -30,7 +30,12 @@ Note:
 
 ### JINQ - LINQ für JavaScript
 Verarbeitet monadische Strukturen mittels:
- Beispiel
+```js[]
+ from(datastructure)
+  .where(condition)
+  .select(condition)
+  .result() 
+```
 
 Note:
 - Stellt Funktionen zur Verfügung, die rein auf den monadischen Funktionen arbeiten
