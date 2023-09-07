@@ -9,9 +9,6 @@ Mögliche Kontexte: <!-- .elements class="fragment" data-fragment-index="1" -->
 Wie?                    <!-- .elements class="fragment" data-fragment-index="2" -->
 Gemeinsames Interface!  <!-- .elements class="fragment" data-fragment-index="2" -->
 
-Note:
-- praktische Abstraktionen für das Verarbeiten von Daten unabhängig vom Kontext
-- ermöglicht durch das implementieren von Interfaces
 
 
 
@@ -23,8 +20,8 @@ Definierte Funktionen:
 - `and` (in Haskell: `bind`)
 
 Note:
-- orientiert an haskell monadischem interface
-- Haben uns für dies entschieden, weil Haskell aufzeigt, dass dies sehr generelle programmierung zulässt
+- orientiert an monadischem interface von haskell
+- mächtige und generalisierte Abstraktionen 
 
 
 

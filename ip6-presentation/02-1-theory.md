@@ -9,9 +9,8 @@ _Eine endliche oder unendliche Folge von Werten ._<!-- .elements class="fragment
 `a, ab, abc, abcd, abcde, ...`<!-- .elements class="fragment" data-fragment-index="2" -->
 
 Note:
-- Was ist eine Sequence? In anderen Sprachen würde man vllt von Liste sprechen, aber lazy liste
-- Die Sequence ist aber lazy, was bedeutet das? Die Sequence hat ein Startwert, jeder weiterer wird basierend auf dem vorhergehenden berechnet
-- Der Speicherplatz ist also minimal, egal ob die Sequence 1 oder und unendlich viele Elemente erzeugt.
+- keine normale Liste - lazy
+- basiert auf Iteratoren
 
 
 
@@ -27,12 +26,8 @@ iterator.next(); // returns { done: true,  value: undefined }
 ```
 
 Note:
-- Wie wird eine lazy Sequence erstellt? Dafür müssen wir die Iteration Protokolle von JS betrachten
-- Dafür betrachten wir ein ganz einfaches Beispiel eines gewöhnlichen JavaScript Array, welches ebenfalls ein Objekt ist, das die Iteration Protokolle implementert
-- Auf einem Object, welches die Iteration Protokolle befolgt, ist es möglich, eine Funktion mit dem Namen [Symbol.iterator] zu erhalten.
-- Dies returniert nun ein Objekt, welches die Funktion next() bereitstellt.
-- Über diese Funktion erhält man nun Wert für Wert, bei jedem Aufruf den nächsten, bis das Iterable. also ein iterierbares Objekt aufgebraucht ist
-- ein Iterable kann nur einmal durchloffen werden, anschliessen ist done auf true.
+- kann nur einmal iteriert werden
+- folgt den JS Iteration Protokollen
 
 
 
@@ -52,14 +47,6 @@ for (const _one of InfiniteOnesIterable()) {
   // hangs forever, since done is always false
 }
 ```
-
-Note:
-- Ein kurzer Blick auf die Implementierung der Iteration Protokolle
-- In diesem Beispiel definieren wir ein Iterable, welches eine unendliche Folge von Einsen generiert
-- Dabei sehen wir auf Linie 4-6, dass eine Funktion mit dem Namen Symbol.iterator definiert ist - Symbol.iterator ist ein keyword definiert von der Sprach JS
-- die Funktion liefert ein Objekt zurück, welches eine Funktion mit dem Namen next hat.
-- Die Funktion next, definiert auf Linie 2, returniert nun eine Objekt, welches aus done und value besteht
-
 
 
 
@@ -83,6 +70,8 @@ const Sequence = (start, whileFunction, incrementFunction) => {
 };
 ```
 
+Note:
+- logik weggelassen
 
 
 ### Verwendung einer Sequence 
@@ -110,7 +99,7 @@ Lösung: Decorator Pattern<!-- .elements class="fragment" data-fragment-index="2
 
 
 ### Decorator Pattern 
-<img src="ip6-presentation/assets/decorator.png" width="800"/>
+<img src="assets/decorator.png" width="800"/>
 
 Note:
 - Beispiel map: jeder Wert wird auf einen anderen abgebildet
@@ -142,7 +131,7 @@ const map = mapper => iterable => {
 
 
 
-### Vorteile der Umsetzung 
+### Vorteile der Architektur 
 ```js[]
 const values = [0,1,2,3];
 const mapped = map(x => x * 2)(values);
@@ -151,11 +140,3 @@ const mapped = map(x => x * 2)(values);
 - Receiver ist letztes Argument
 - Lazy evaluation
 - Alle iterables prozessierbar
-
-Note:
-- Receiver letztes Argument: 
-  - ermöglicht eta-reduzierung des receiver
-  - ermöglicht konfigurierbare Funktionen
-  - ermöglicht Verwendung mit allen Iterables
--Lazy evaluation
-  - Durch befolgen der Iteration Protokolle der Sequence und der Decorators werden alle Werte lazy evaluiert
