@@ -139,5 +139,4 @@ const mapped = map(x => x * 2)(values);
 ```
 
 - Receiver ist letztes Argument
-- Lazy evaluation
 - Alle iterables prozessierbar
