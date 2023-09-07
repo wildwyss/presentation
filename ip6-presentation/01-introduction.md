@@ -55,6 +55,5 @@ Note:
 - Weitere Abstraktionen                         <!-- .elements class="fragment" data-fragment-index="2" -->
   - Verarbeiten von Daten in einem Kontext      <!-- .elements class="fragment" data-fragment-index="2" -->
 - Ein Blick in die IDE                          <!-- .elements class="fragment" data-fragment-index="3" -->
-  - Vergleich Sequence Library vs. JS           <!-- .elements class="fragment" data-fragment-index="3" -->
   - Live Coding                                 <!-- .elements class="fragment" data-fragment-index="3" -->
 - Resultate                                     <!-- .elements class="fragment" data-fragment-index="4" -->
